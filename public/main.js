@@ -27,7 +27,7 @@ function uploadImage() {
         userId: "yantralivetest@gmail.com",
         base64: base64Image,
     }
-    fetch("http://34.27.127.140:8080/uploadImageToGCP", {
+    fetch("https://api.mayamaya.us/uploadImageToGCP", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
