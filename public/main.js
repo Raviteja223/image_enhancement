@@ -36,7 +36,7 @@ function uploadImage() {
     }).then(async (GCPresponse) => {
         const GCPData = await GCPresponse.json();
         console.log(GCPData, "GCPData");
-        fetch("http://localhost:5454/img_enhancer", {
+        fetch("https://image-enhancement-backend.vercel.app/img_enhancer", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
